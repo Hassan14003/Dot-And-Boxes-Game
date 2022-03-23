@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".activities.SplashActivity">
+
+    <ImageView
+        android:id="@+id/img_dot_boax_gif"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:visibility="visible" />
+
+    <com.dotsandboxes.utils.GifImageView
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:visibility="gone"
+        android:gravity="center" />
+
+    <!--<com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/img_dot_boax_gif"
+        android:layout_width="@dimen/_250sdp"
+        android:layout_height="@dimen/_250sdp"
+        android:gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"
+        app:lottie_rawRes="@raw/logo_animastion" />-->
+
+
+</LinearLayout>

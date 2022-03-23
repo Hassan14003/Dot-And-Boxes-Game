@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/card_view_background"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_85sdp">
+
+    <TextView
+        android:id="@+id/tv_game_opponent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/muli_bold"
+        android:text="Me Vs Robot"
+        android:textColor="@color/colorTitleBar"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_score_lable"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.41000003" />
+
+
+    <TextView
+        android:id="@+id/tv_score_lable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/muli_light"
+        android:text="Score"
+        android:textColor="@color/colorBackground"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_game_score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.183"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@id/tv_game_score"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.831" />
+
+
+    <TextView
+        android:id="@+id/tv_game_score"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/muli_semi_bold"
+        android:text="@string/history_sample_score"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_score_lable"
+        app:layout_constraintTop_toBottomOf="@+id/tv_game_opponent"
+        app:layout_constraintVertical_bias="0.428" />
+
+
+    <TextView
+        android:id="@+id/tv_game_result"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/muli_semi_bold"
+        android:text="@string/win"
+        android:textAlignment="textEnd"
+        android:textColor="@color/colorAccent"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_game_opponent"
+        app:layout_constraintBottom_toTopOf="@+id/tv_game_time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_game_opponent" />
+
+
+    <TextView
+        android:id="@+id/tv_game_time"
+        android:layout_width="0dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="@font/muli_light"
+        android:text="@string/history_sample_time"
+        android:textAlignment="textEnd"
+        android:textColor="@color/font_color_title_small"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tv_game_score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/tv_game_score" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

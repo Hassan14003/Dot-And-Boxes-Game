@@ -1,0 +1,1 @@
+Kindly copy .apk file in your android mobile phone and install the app to see the working of the app.
